@@ -3,9 +3,9 @@ import api from '../services/api';
 import { useAuth } from './AuthContext';
 import { toast } from 'react-hot-toast';
 
-export const HomeworkContext = createContext(null);
+export const HomeWorkContext = createContext(null);
 
-export const HomeworkContextProvider = ({ children }) => {
+export const HomeWorkContextProvider = ({ children }) => {
     const { user, loading: authLoading } = useAuth();
     const [allHomeworks, setAllHomeworks] = useState([]);
     const [homeworksLoading, setHomeworksLoading] = useState(true);
@@ -135,16 +135,16 @@ export const HomeworkContextProvider = ({ children }) => {
     };
 
     return (
-        <HomeworkContext.Provider value={contextValue}>
+        <HomeWorkContext.Provider value={contextValue}>
             {children}
-        </HomeworkContext.Provider>
+        </HomeWorkContext.Provider>
     );
 };
 
 export const useHomework = () => {
-    const context = useContext(HomeworkContext);
+    const context = useContext(HomeWorkContext);
     if (context === null) {
-        throw new Error('useHomework must be used within a HomeworkContextProvider');
+        throw new Error('useHomework must be used within a HomeWorkContextProvider');
     }
     return context;
 };
