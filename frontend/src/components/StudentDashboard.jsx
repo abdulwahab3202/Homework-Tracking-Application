@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { useHomework } from '../context/HomeworkContext.jsx';
 import HomeworkCommentsModal from './HomeworkCommentsModal';
 
-const BACKEND_URL = process.env.VITE_API_URL || 'http://localhost:5000';
+const BACKEND_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 function StudentDashboard() {
   const { user } = useAuth();
