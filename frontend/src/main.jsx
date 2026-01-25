@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { Toaster } from 'react-hot-toast';
-import { HomeWorkContextProvider } from './context/HomeworkContext.jsx';
+import { HomeworkContextProvider } from './context/HomeworkContext';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -14,10 +14,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <AuthProvider>
-        <HomeWorkContextProvider>
+        <HomeworkContextProvider>
           <App />
           <Toaster position="top-right" reverseOrder={false} />
-        </HomeWorkContextProvider>
+        </HomeworkContextProvider>
       </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>
