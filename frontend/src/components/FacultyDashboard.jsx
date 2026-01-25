@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { useHomework } from '../context/HomeWorkContext';
+import { useHomework } from '../context/HomeworkContext.jsx';
 import { toast } from 'react-hot-toast';
 import HomeworkPostModal from './HomeworkPostModal';
 import HomeworkStatusModal from './HomeworkStatusModal';

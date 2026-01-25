@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { Toaster } from 'react-hot-toast';
-import { HomeWorkContextProvider } from './context/HomeWorkContext';
+import { HomeWorkContextProvider } from './context/HomeworkContext.jsx';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
