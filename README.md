@@ -47,19 +47,20 @@ A full-stack web application that streamlines homework management and academic i
 
 ---
 
+## 📂 Project Structure
+
 Homework-Tracking-Application/
 │
 ├── frontend/
 │ ├── src/
 │ ├── public/
-│ ├── .gitignore
+│ └── .gitignore
 │
 ├── backend/
 │ ├── src/
-│ ├── .gitignore
+│ └── .gitignore
 │
-├── README.md
-
+└── README.md
 
 ---
 
