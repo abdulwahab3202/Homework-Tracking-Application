@@ -3,7 +3,7 @@ import api from '../services/api';
 import { useAuth } from './AuthContext';
 import { toast } from 'react-hot-toast';
 
-export const HomeworkContext = createContext(null);
+export const HomeworkContext  = createContext(null);
 
 export const HomeworkContextProvider = ({ children }) => {
     const { user, loading: authLoading } = useAuth();

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHomework } from '../context/HomeWorkContext';
+import { useHomework } from '../context/HomeworkContext.jsx';
 
 function HomeworkPostModal({ isOpen, onClose }) {
   const [title, setTitle] = useState('');

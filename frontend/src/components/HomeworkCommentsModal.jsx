@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useHomework } from '../context/HomeWorkContext';
+import { useHomework } from '../context/HomeworkContext.jsx';
 import { timeAgo } from '../utils/timeAgo';
 
 function HomeworkCommentsModal({ isOpen, onClose, homework }) {
