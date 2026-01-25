@@ -65,13 +65,12 @@ Homework-Tracking-Application/
 
 ## ⚙️ Installation & Setup
 
-### Backend
+### Frontend and Backend
 ```bash
 cd backend
 npm install
 npm start
 
-### Frontend
 cd frontend
 npm install
 npm start
