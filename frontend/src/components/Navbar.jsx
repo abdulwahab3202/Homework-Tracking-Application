@@ -23,7 +23,7 @@ function Navbar() {
             to="/"
             className="text-xl md:text-2xl font-extrabold tracking-wide hover:opacity-90 transition"
           >
-            Student Faculty Portal
+            Homework Tracker
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">
